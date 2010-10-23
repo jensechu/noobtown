@@ -8,11 +8,19 @@ screen = pygame.display.set_mode(SCREEN_SIZE, RESIZABLE, 32)
 pygame.display.set_caption('Pallet Town')
 screen = pygame.display.get_surface()
 
+#Load image files
 pikachu_file = os.path.join("media", "pikachu_sprite.png")
 pikachu_cursor = pygame.image.load(pikachu_file).convert_alpha()
 
 background_file = os.path.join("media", "background_forest.png")
 background_forest = pygame.image.load(background_file).convert()
+
+#Load sound files
+lavendar_music_file = os.path.join("media", "lavendar_music.mp3")
+lavendar_music = pygame.mixer.music.load(lavendar_music_file)
+pygame.mixer.music.play(1)
+
+
 
 
 Fullscreen = False
